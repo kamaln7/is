@@ -1,0 +1,24 @@
+{
+  "name": "is",
+  "version": "0.0.0",
+  "description": "is?",
+  "scripts": {
+    "start": "coffee index.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KamalN7/is.git"
+  },
+  "author": "Kamal Nasser <hello@kamal.io>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/KamalN7/is/issues"
+  },
+  "homepage": "https://github.com/KamalN7/is",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "express": "^4.4.5",
+    "leveldown": "^0.10.2",
+    "levelup": "^0.18.5"
+  }
+}
