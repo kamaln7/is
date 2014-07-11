@@ -15,7 +15,7 @@ app.get '/:word', (req, res) ->
   db.get word, (err, positive) ->
     if err? then return res.send template.replace '{-}', 'Try something else.'
 
-    res.send template.replace '{-}', (if positive is 1 and not config.reverse then 'Yes.' else 'No.')
+    res.send template.replace '{-}', (if positive and not config.reverse then 'Yes.' else 'No.')
 
 app.listen config.port, config.host, ->
   console.log "[is]: #{config.host}:#{config.port}"
